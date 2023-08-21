@@ -1,0 +1,15 @@
+git init
+cd
+mkdir
+touch
+git add .
+git status
+git commit - m ""
+git remote add origin
+git push origin master
+git branch
+git checkout feature
+git push origin feature
+pwd
+git mv
+nano para editar archivos
