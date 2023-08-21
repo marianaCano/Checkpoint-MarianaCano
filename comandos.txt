@@ -1,3 +1,4 @@
+Comando utilizados 
 git init
 cd
 mkdir
@@ -13,3 +14,328 @@ git push origin feature
 pwd
 git mv
 nano para editar archivos
+
+
+Historial de la consola
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse (master)
+$ git init
+Initialized empty Git repository in C:/Users/lunam/OneDrive - UPB/Escritorio/DigitalHouse/.git/
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse (master)
+$ git init Checkpoint-MarianaCano
+Initialized empty Git repository in C:/Users/lunam/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano/.git/
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse (master)
+$ mkdr Checkpoint-MarianaCano
+bash: mkdr: command not found
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse (master)
+$ mkdir Checkpoiint-MarianaCano
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse (master)
+$ cd Checkpoint-MarianaCano
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ touch main.js
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ touch index.html
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git add .
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   main.js
+
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git commit-m "mi primer commit"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git remote and origin https://github.com/marianaCano/Checkpoint-MarianaCano.git
+error: Unknown subcommand: and
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git remote add origin https://github.com/marianaCano/Checkpoint-MarianaCano.git
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/marianaCano/Checkpoint-MarianaCano.git'
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/marianaCano/Checkpoint-MarianaCano.git'
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ ^C
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git remote add origin https://github.com/marianaCano/Checkpoint-22-08-23-MarianaCano.git
+error: remote origin already exists.
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/marianaCano/Checkpoint-MarianaCano.git'
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   main.js
+
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git commit -m "commit 01 de mariana cano"
+[master (root-commit) 3498829] commit 01 de mariana cano
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 243 bytes | 243.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/marianaCano/Checkpoint-MarianaCano.git
+ * [new branch]      master -> master
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git branch feature
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git branch
+  feature
+* master
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git checkout feature
+Switched to branch 'feature'
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (feature)
+$ mkdir Hardware
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (feature)
+$ mkdir Software
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (feature)
+$ mkdir SeguridadInformatica
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (feature)
+$ cd Hardware
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano/Hardware (feature)
+$ touch resumen.txt
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano/Hardware (feature)
+$ cd Software
+bash: cd: Software: No such file or directory
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano/Hardware (feature)
+$ ls
+resumen.txt
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano/Hardware (feature)
+$ pwd
+/c/Users/lunam/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano/Hardware
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano/Hardware (feature)
+$ cd ...
+bash: cd: ...: No such file or directory
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano/Hardware (feature)
+$ cd..
+bash: cd..: command not found
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano/Hardware (feature)
+$ cd ..
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (feature)
+$ cd Software
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano/Software (feature)
+$ touch resumen.txt
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano/Software (feature)
+$ cd ..
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (feature)
+$ cd SeguridadInformatica
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano/SeguridadInformatica (feature)
+$ touch resumen.txt
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano/SeguridadInformatica (feature)
+$ git add .
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano/SeguridadInformatica (feature)
+$ git commit -m " commt 02 de mariana cano "
+[feature 38d8efd]  commt 02 de mariana cano
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 SeguridadInformatica/resumen.txt
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano/SeguridadInformatica (feature)
+$ git push origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 360 bytes | 360.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/marianaCano/Checkpoint-MarianaCano/pull/new/feature
+remote:
+To https://github.com/marianaCano/Checkpoint-MarianaCano.git
+ * [new branch]      feature -> feature
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano/SeguridadInformatica (feature)
+$ cd ..
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (feature)
+$ git add .
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (feature)
+$ git commit -m " commit 02.5 de Mariana Cano"
+[feature 953e7c8]  commit 02.5 de Mariana Cano
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 Software/resumen.txt
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (feature)
+$ git push origin feature
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 336 bytes | 336.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/marianaCano/Checkpoint-MarianaCano.git
+   38d8efd..953e7c8  feature -> feature
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (feature)
+$ git checkout master
+Switched to branch 'master'
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git branch
+  feature
+* master
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ pwd
+/c/Users/lunam/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ nano resumenHardware.txt
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git add .
+warning: LF will be replaced by CRLF in resumenHardware.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in resumenSoftware.txt.
+The file will have its original line endings in your working directory
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git commit -m " commit 03 de Mariana Cano"
+[master fd6b8f9]  commit 03 de Mariana Cano
+ 4 files changed, 8 insertions(+)
+ delete mode 100644 index.html
+ delete mode 100644 main.js
+ create mode 100644 resumenHardware.txt
+ create mode 100644 resumenSoftware.txt
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 355 bytes | 355.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/marianaCano/Checkpoint-MarianaCano.git
+   3498829..fd6b8f9  master -> master
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ toush comandos.txt
+bash: toush: command not found
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ touch comandos.txt
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ nano comandos.txt
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git add .
+warning: LF will be replaced by CRLF in comandos.txt.
+The file will have its original line endings in your working directory
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git commit - m" commit 04 de Mariana Cano"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'm commit 04 de Mariana Cano' did not match any file(s) known to git
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git commit -m " commit 04 de mariana cano "
+[master 22edd28]  commit 04 de mariana cano
+ 1 file changed, 15 insertions(+)
+ create mode 100644 comandos.txt
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 454 bytes | 454.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/marianaCano/Checkpoint-MarianaCano.git
+   fd6b8f9..22edd28  master -> master
+
+lunam@DESKTOP-4MNQ8T1 MINGW64 ~/OneDrive - UPB/Escritorio/DigitalHouse/Checkpoint-MarianaCano (master)
+$
+
